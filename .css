@@ -1,0 +1,87 @@
+  <style>
+        /* Estilo geral da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: white;
+            text-align: center;
+        }
+
+        /* Estilo do título principal */
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #e50914;
+        }
+
+        /* Estilo do texto centralizado */
+        .center-text {
+            font-size: 1.8em;
+            margin: 40px 0;
+            color: white;
+        }
+
+        /* Contêiner do carrossel de vídeos */
+        .video-carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 20px;
+            gap: 15px;
+            margin: 0 auto;
+            max-width: 95vw;
+        }
+
+        /* Estilo dos vídeos */
+        .video-container {
+            flex: 0 0 auto;
+            position: relative;
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .video-container img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efeito de hover na thumbnail */
+        .video-container img:hover {
+            transform: scale(1.1);
+        }
+
+        iframe {
+            display: none;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* Botões de navegação */
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            color: white;
+            font-size: 2em;
+            cursor: pointer;
+            z-index: 10;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .nav-button.left {
+            left: 10px;
+        }
+
+        .nav-button.right {
+            right: 10px;
+        }
+    </style>
